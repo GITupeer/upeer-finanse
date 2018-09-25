@@ -1,0 +1,113 @@
+.training,.marketplace{
+
+    .section-body{
+        padding: 0; 
+        border-top: 0;
+    }
+
+    .tabs-container{
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 12px;
+    }
+
+    .tab-label {
+        // border-bottom: 2px solid #ddd; 
+        // border-top: 2px solid #ddd; 
+        // border-left: 2px solid transparent;
+        border-top: 2px solid #e2e2e2;
+        padding: 12px 0 8px 0;
+        z-index: 1;
+        width: 50%; 
+        display: flex; 
+        align-items: center;
+        justify-content: center;
+        transition: all .2s;
+        // border-top-right-radius: 3px;
+        // border-top-left-radius: 3px;
+        // border: 1px solid #ddd;
+        i{
+            font-size: 16px;
+            padding-right: 10px;
+        }
+    }
+    
+    .tab-content {
+        flex: 1;
+        text-align: left;
+        margin-top: -1px;
+        padding: 1em;
+        order: 1; //??
+        min-height: calc(100vh - 204px);
+        background-color: #fff;
+        border-radius:3px;
+    }
+    .tab-input, .tab-content {
+        display: none;
+    }
+    .tab-input:checked + .tab-label {
+        // border-bottom: 2px solid $exit-green;
+        border-top: 2px solid $exit-green;
+        // border-left: 2px solid $exit-green;
+        border-top-right-radius: 3px;
+        border-top-left-radius: 3px;
+        color: $exit-green;
+        font-weight: 700;
+        background-color: #fff;
+        // border-bottom: #fff;
+    }
+    .tab-input:checked + .tab-label + .tab-content {
+        display: block;
+    }
+
+    .training-videos{
+        .video-item {
+            display: flex; 
+            flex-direction: column;
+            margin-bottom: 20px;
+        
+            .item{
+                &__header{
+                    font-size: 14px;
+                    color: $exit-green-light;
+                    font-weight: 700;
+                    border-bottom: 1px solid $exit-green-light;
+                    padding: 10px 0;
+                }
+                &__description{
+                    padding: 10px 0;
+                }
+                &__link{
+                    display: inline-block; 
+                    width: 150px;
+                    background-color: transparent;
+                    align-self: flex-end; 
+                    display: flex; 
+                    justify-content: space-evenly;
+                    i{
+                        font-size: 10px;
+                    }
+                }
+                
+            }
+        }
+    }
+    .training-audio{
+        .audio-item{
+            margin-bottom: 20px;
+            .item-header{
+                padding-left: 20px;
+                padding-bottom: 5px;
+            }
+            .item-title{
+                font-size: 12px;
+                font-weight: 700;
+                color: $exit-green;
+            }
+            .audio{
+                width: 100%;
+            }
+        }
+    }
+}
+

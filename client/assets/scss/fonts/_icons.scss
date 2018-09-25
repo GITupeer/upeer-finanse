@@ -1,0 +1,263 @@
+/*------------------------
+	icons
+-------------------------*/
+@function unicode($str) {
+  @return unquote("\"\\#{$str}\"");
+}
+
+$icon-single-neutral-actions: unicode(ea04);
+$icon-lock-5: unicode(ea05);
+$icon-multiple-actions-view: unicode(ea06);
+$icon-Real-Estate-Search-House-1: unicode(ea07);
+$icon-monitor-heart-beat-search: unicode(ea08);
+$icon-job-seach-team-woman: unicode(ea09);
+$icon-information-circle: unicode(ea0a);
+$icon-Add-Circle-Alternate: unicode(ea0b);
+$icon-alarm-bell-1: unicode(ea0c);
+$icon-headphones-customer-support-question: unicode(ea0d);
+$icon-cog-1: unicode(ea0e);
+$icon-phonebook: unicode(ea0f);
+$icon-real-estate-settings-house-wrench: unicode(ea10);
+$icon-shop: unicode(ea11);
+$icon-app-window-rss: unicode(ea12);
+$icon-Single-Neutral-Circle-Alternate: unicode(ea13);
+$icon-building: unicode(ea14);
+$icon-power-button: unicode(ea15);
+$icon-single-neutral-actions-star: unicode(ea16);
+$icon-fireworks-people-watch: unicode(ea17);
+$icon-real-estate-action-house-heart: unicode(ea18);
+$icon-video-player-subtitle: unicode(ea19);
+$icon-folder-open: unicode(ea1a);
+$icon-invitation: unicode(ea1b);
+$icon-presentation: unicode(ea1c);
+$icon-multiple-users-add: unicode(ea1d);
+$icon-list-stars: unicode(ea1e);
+$icon-real-estate-action-house-dollar: unicode(ea1f);
+$icon-real-estate-action-house-key: unicode(ea20);
+$icon-job-seach-man: unicode(ea21);
+$icon-single-neutral-actions-2: unicode(ea22);
+$icon-phone: unicode(ea23);
+$icon-pencil-2: unicode(ea24);
+$icon-email-action-unread: unicode(ea25);
+$icon-pin: unicode(ea26);
+$icon-bed-single: unicode(ea27);
+$icon-bathroom-tub-towel: unicode(ea28);
+$icon-currency-dollar: unicode(ea29);
+$icon-search-1: unicode(ea2a);
+$icon-office-file-pdf-1: unicode(ea2b);
+$icon-real-estate-location-house-pin-1: unicode(ea2c);
+$icon-monitor-www: unicode(ea2d);
+$icon-real-estate-action-house-warning: unicode(ea2e);
+$icon-Tags-Double-1: unicode(ea2f);
+$icon-tag-free: unicode(ea30);
+$icon-speakers-note: unicode(ea31);
+$icon-controls-play: unicode(ea32);
+$icon-single-neutral-id-card-4: unicode(ea33);
+$icon-phone-hand-typing: unicode(ea34);
+$icon-network: unicode(ea35);
+$icon-hyperlink-3: unicode(ea36);
+
+.icon-single-neutral-actions::before {
+  content: $icon-single-neutral-actions;
+}
+
+.icon-lock-5::before {
+  content: $icon-lock-5;
+}
+
+.icon-multiple-actions-view::before {
+  content: $icon-multiple-actions-view;
+}
+
+.icon-Real-Estate-Search-House-1::before {
+  content: $icon-Real-Estate-Search-House-1;
+}
+
+.icon-monitor-heart-beat-search::before {
+  content: $icon-monitor-heart-beat-search;
+}
+
+.icon-job-seach-team-woman::before {
+  content: $icon-job-seach-team-woman;
+}
+
+.icon-information-circle::before {
+  content: $icon-information-circle;
+}
+
+.icon-Add-Circle-Alternate::before {
+  content: $icon-Add-Circle-Alternate;
+}
+
+.icon-alarm-bell-1::before {
+  content: $icon-alarm-bell-1;
+}
+
+.icon-headphones-customer-support-question::before {
+  content: $icon-headphones-customer-support-question;
+}
+
+.icon-cog-1::before {
+  content: $icon-cog-1;
+}
+
+.icon-phonebook::before {
+  content: $icon-phonebook;
+}
+
+.icon-real-estate-settings-house-wrench::before {
+  content: $icon-real-estate-settings-house-wrench;
+}
+
+.icon-shop::before {
+  content: $icon-shop;
+}
+
+.icon-app-window-rss::before {
+  content: $icon-app-window-rss;
+}
+
+.icon-Single-Neutral-Circle-Alternate::before {
+  content: $icon-Single-Neutral-Circle-Alternate;
+}
+
+.icon-building::before {
+  content: $icon-building;
+}
+
+.icon-power-button::before {
+  content: $icon-power-button;
+}
+
+.icon-single-neutral-actions-star::before {
+  content: $icon-single-neutral-actions-star;
+}
+
+.icon-fireworks-people-watch::before {
+  content: $icon-fireworks-people-watch;
+}
+
+.icon-real-estate-action-house-heart::before {
+  content: $icon-real-estate-action-house-heart;
+}
+
+.icon-video-player-subtitle::before {
+  content: $icon-video-player-subtitle;
+}
+
+.icon-folder-open::before {
+  content: $icon-folder-open;
+}
+
+.icon-invitation::before {
+  content: $icon-invitation;
+}
+
+.icon-presentation::before {
+  content: $icon-presentation;
+}
+
+.icon-multiple-users-add::before {
+  content: $icon-multiple-users-add;
+}
+
+.icon-list-stars::before {
+  content: $icon-list-stars;
+}
+
+.icon-real-estate-action-house-dollar::before {
+  content: $icon-real-estate-action-house-dollar;
+}
+
+.icon-real-estate-action-house-key::before {
+  content: $icon-real-estate-action-house-key;
+}
+
+.icon-job-seach-man::before {
+  content: $icon-job-seach-man;
+}
+
+.icon-single-neutral-actions-2::before {
+  content: $icon-single-neutral-actions-2;
+}
+
+.icon-phone::before {
+  content: $icon-phone;
+}
+
+.icon-pencil-2::before {
+  content: $icon-pencil-2;
+}
+
+.icon-email-action-unread::before {
+  content: $icon-email-action-unread;
+}
+
+.icon-pin::before {
+  content: $icon-pin;
+}
+
+.icon-bed-single::before {
+  content: $icon-bed-single;
+}
+
+.icon-bathroom-tub-towel::before {
+  content: $icon-bathroom-tub-towel;
+}
+
+.icon-currency-dollar::before {
+  content: $icon-currency-dollar;
+}
+
+.icon-search-1::before {
+  content: $icon-search-1;
+}
+
+.icon-office-file-pdf-1::before {
+  content: $icon-office-file-pdf-1;
+}
+
+.icon-real-estate-location-house-pin-1::before {
+  content: $icon-real-estate-location-house-pin-1;
+}
+
+.icon-monitor-www::before {
+  content: $icon-monitor-www;
+}
+
+.icon-real-estate-action-house-warning::before {
+  content: $icon-real-estate-action-house-warning;
+}
+
+.icon-Tags-Double-1::before {
+  content: $icon-Tags-Double-1;
+}
+
+.icon-tag-free::before {
+  content: $icon-tag-free;
+}
+
+.icon-speakers-note::before {
+  content: $icon-speakers-note;
+}
+
+.icon-controls-play::before {
+  content: $icon-controls-play;
+}
+
+.icon-single-neutral-id-card-4::before {
+  content: $icon-single-neutral-id-card-4;
+}
+
+.icon-phone-hand-typing::before {
+  content: $icon-phone-hand-typing;
+}
+
+.icon-network::before {
+  content: $icon-network;
+}
+
+.icon-hyperlink-3::before {
+  content: $icon-hyperlink-3;
+}
+

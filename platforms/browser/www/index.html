@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exit</title>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDZoAj9KgEC94H_ry0FaZ3hRaVqsZiq7-8&libraries=places" type="text/javascript"></script>
+    <script src="socket.io.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i" rel="stylesheet">
+    <!-- <script src="//127.0.0.1:6001/socket.io/socket.io.js"></script> -->
+
+
+  <link href="./styles.ea4bd9ea.css" rel="stylesheet"></head>
+  <body>
+    <div id="app"></div>
+
+    <script>
+      var isPhoneGap = function()
+      {
+        return /^file:\/{3}[^\/]/i.test(window.location.href)
+              && /ios|iphone|ipod|ipad|android/i.test(navigator.userAgent)
+      };
+
+      (function(){
+        if(isPhoneGap())
+        {
+          var socket = document.createElement('script');
+          socket.setAttribute('src','cordova.js');
+          document.querySelector('head').appendChild(socket);
+        }
+      })()
+    </script>
+
+  <script type="text/javascript" src="./vendor.577e37d6.js"></script><script type="text/javascript" src="./client.a96eafb7.js"></script></body>
+</html>

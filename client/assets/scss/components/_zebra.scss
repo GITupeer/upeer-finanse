@@ -1,0 +1,99 @@
+// zebra list - lead stram, contacts, documents 
+.list_container {
+	font-size: 12px;
+	text-align: center;
+
+	.list_head {
+		color: $exit-green; 
+		background-color: #f2f2f2; 
+		border-top: 1px solid $exit-green;
+		font-weight: 700; 
+		min-height: 32px;
+	
+		display: flex;
+
+		.list_head-item:not(:last-child) span {
+			border-right: 1px solid #008c9a;
+			flex: 1;
+			line-height: 18px;
+		}
+	}
+
+	.list_head-item, .list_short-item{
+		flex:1;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		&.doc-type{
+			flex: 0 0 15%;
+		}
+		&.doc-title{
+			flex: 0 0 75%;
+			justify-content: flex-start;
+			padding-left: 5px;
+			text-align: left; //??
+
+		}
+		&.doc-download{
+			flex: 0 0 10%;
+			justify-content: flex-start;
+			padding-left: 5px;
+			text-align: left; //??
+
+		}
+	}
+
+	.list_content {
+
+		.list_row {
+			&:nth-of-type(odd){
+				background-color: #fff;
+			}
+
+			.list_short{
+				font-weight: 400;
+				min-height: 45px;
+				display: flex; 
+
+				// .list_short-item:last-of-type {
+				// 	// width: 16%;
+				// 	// text-align: center;
+				// }
+				// .arrow_right{
+				// 	width: auto;
+				// 	transition: all .1s;
+				// 	color: $exit-green;
+				// }
+			}
+
+			// .list_expanded{
+			// 	//opacity: 0;
+			// 	overflow: hidden;
+			// 	height: 0;
+			// 	width: 100%;
+			// 	//padding-bottom: 10px;
+			// 	transition: all .1s;
+
+			// 	p {
+			// 		padding: 5px;
+			// 		padding-left: 20px;
+			// 	}
+			// }
+
+			// &.expanded{
+			// 	.list_short-item {
+			// 		.arrow_right {
+			// 			transform: rotate(90deg);
+			// 		}
+			// 	}
+
+			// 	.list_expanded{
+			// 		//opacity: 1;
+			// 		//height: 120px;
+			// 		height: inherit;
+			// 	}
+			// }
+		}
+	}
+}

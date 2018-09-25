@@ -1,0 +1,15 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\build",
+    "\\client",
+    "\\client\\assets",
+    "\\client\\assets\\css",
+    "\\client\\assets\\scss",
+    "\\client\\assets\\scss\\components",
+    "\\client\\views",
+    "\\client\\views\\Components"
+  ],
+  "SelectedNode": "\\build\\index.html",
+  "PreviewInSolutionExplorer": false
+}

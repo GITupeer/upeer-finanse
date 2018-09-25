@@ -1,0 +1,83 @@
+.btn {
+    color: $exit-green-light;
+    font-size: 12px;
+    padding: 7px 5px;
+    border: 1px solid $exit-green-light;
+    border-radius: 50px;    
+    font-weight: bold;
+    background-color: #f2f2f2;
+    align-self: flex-start;
+    &__send, {
+        width: 120px;
+    }
+    &__check{
+        width: 120px
+    }
+    &__logout{
+        width: 120px;
+    }
+    &__support{
+        width: 100px;
+        align-self: center;
+    }
+    &__modal{
+        width: 120px;
+        background-color: white;
+        margin-top: 12px;
+    }
+    &__white{
+        background-color: #fff;
+        width: 130px;
+        font-weight: normal;
+        display: block; 
+        margin: 0 auto;
+    }
+    &__more{
+        margin: 10px 0;
+        width: 150px;
+
+    }
+
+}
+
+
+.edit-btn, .scrollUp-btn, .scrollUp-btn-add{
+	width: 50px; 
+	height: 50px; 
+	background-color: $exit-green; 
+	border-radius: 50%;
+	position: fixed; 
+	right: 20px;
+	bottom: 65px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	transition: all .2s;
+
+	i{
+		color: #fff;
+		font-size: 16px;
+	}
+	&:active{
+		box-shadow: 0 1px 2px rgba(0,0,0,0.16), 0 1px 2px rgba(0,0,0,0.23);
+    }
+    
+    & .add{
+        font-size: 38px; 
+        color: white;
+    }
+}
+
+.scrollUp-btn, .scrollUp-btn-add{
+    visibility: hidden;
+    opacity: 0;
+    &.show{
+        visibility: visible;
+        opacity: 1
+    }
+}
+
+.red {
+    background-color: #EF5350;
+}

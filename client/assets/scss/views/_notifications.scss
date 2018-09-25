@@ -1,0 +1,104 @@
+.notifications {
+	display: flex;
+	flex-direction: column;
+	
+	.section-body{
+		flex:1;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+
+		.btn{
+			align-self: center;
+		}
+	}
+	
+	.single-notification{
+		display: flex;
+		align-items: center;
+		background: #fff;
+		margin-bottom: 10px;
+		border-radius: 3px;
+		position: relative;
+		box-shadow: 0px 0px 1px 1px rgba(179, 179, 179, 0.5);
+		
+		.icon-wrapper{
+			flex: 0 0 20%;
+			// padding: 20px 0;
+			font-size: 24px;
+			text-align: center;
+
+			.icon{
+				margin: 20px 0;
+				width: 28px;
+				height: 28px;
+			}
+
+			&.sticky{
+				color: #F07EAC;
+				background-color: #f3e1e1;
+			}
+			&.active{
+				color: $exit-green;
+				background-color: #cce8eb;
+			}
+			&.passive{
+				color: #b1b1b1;
+				background-color: #e6e6e6;
+			}
+
+		}
+		.text{
+			font-size: 10px;
+			padding-left: 20px;
+		}
+		.date{
+			position: absolute;
+			bottom: 5px;
+			right: 5px;
+			font-size: 10px;
+			color: $exit-green;
+
+		}
+	}
+}
+
+
+//move to transitions scss?
+.fade-enter-active, 
+.fade-leave-active {
+    transition: opacity .5s;
+} 
+
+.fade-leave-active { //prblem with flex? works with simple li elements?
+    position: absolute;
+}
+
+.fade-move{
+    transition: transform .5s; //position: abs problem
+}
+
+.fade-enter, .fade-leave-to{
+    opacity: 0;
+}
+
+//slide transition
+
+.slideRight-enter-active, .slideLeft-enter-active, 
+.slideRight-leave-active, .slideLeft-leave-active{
+    transition: transform .3s;
+}
+
+.slideRight-enter{
+    transform: translateX(-100vw)
+}
+.slideRight-leave-to{
+    transform: translateX(100vw)
+}
+
+.slideLeft-enter{
+    transform: translateX(100vw)
+}
+.slideLeft-leave-to{
+    transform: translateX(-100vw)
+}

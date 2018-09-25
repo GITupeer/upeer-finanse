@@ -1,0 +1,93 @@
+.tutorial-tooltip{
+	position: fixed;
+	max-width: 170px;
+	opacity: 0;
+	background-color: #fff;
+	color: $font_black;
+	border-radius: 3px;
+	box-shadow: 1px 1px 40px rgba(0,0,0,0.5);
+	transition: all .3s;
+	z-index: 3;
+
+	.relative-container{
+		position: relative;
+		padding: 10px;
+		width: 100%;
+		height: 100%;
+		
+	}
+
+	.tooltip-content{
+		margin-bottom: 10px;
+
+		.tooltip-title{
+			text-align: center;
+			color: $exit-green;
+			font-weight: 700;
+			padding-bottom: 5px;
+			border-bottom: 1px solid $exit-green-light;
+		}
+		.tooltip-text{
+			padding-top: 5px;
+			font-size: 14px;
+		}
+	}
+
+	.triangle {
+		width: 0;
+		height: 0;
+		position: absolute;
+		border-style: solid;
+		
+
+		&.top-left{
+			top: -9px;
+			left: 0;
+			border-width: 10px 0 0 10px;
+			border-color: transparent transparent transparent #ffffffe6;
+		}
+
+		&.top-right{
+			top: -9px;
+			right: 0;
+			border-width: 0 0 10px 10px;
+			border-color: transparent transparent #ffffffe6 transparent;
+		}
+
+		&.top-middle{
+			top: -9px;
+			right: calc(50% - 5px);
+			border-width: 0 6px 10px 6px;
+			border-color: transparent transparent #ffffffe6 transparent;
+		}
+
+		&.bottom-left{
+			bottom: -9px;
+			left: 0; 
+			border-width: 10px 10px 0 0;
+			border-color: #ffffffe6 transparent transparent transparent;
+		}
+		&.bottom-right{
+			bottom: -9px;
+			right: 0; 
+			border-width: 0 10px 10px 0;
+			border-color: transparent #ffffffe6 transparent transparent;
+		}
+		&.bottom-middle{
+			bottom: -9px;
+			right: calc(50% - 5px);
+			border-width: 10px 6px 0 6px;
+			border-color: #ffffffe6 transparent transparent transparent;
+		}
+
+	}
+
+	.tooltip-nav{
+		display: flex;
+		justify-content: space-between;
+		.icon{
+			color: $exit-green; 
+			font-size: 18px;
+		}
+	}
+}

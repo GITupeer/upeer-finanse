@@ -1,0 +1,39 @@
+//base layout
+.base-layout {
+	padding: 0 10px; 
+	min-height: calc(100vh - 105px); 
+}
+
+.section-header{
+	font-weight: 700; 
+	padding: 10px 20px; 
+	min-height: 51px; 
+	background-color: #f2f2f2;
+
+	display: flex; 
+	justify-content: space-between;
+	align-items: center; 
+}
+
+.section-body{
+	padding: 10px 0; 
+	border-top: 1px solid $exit-green;
+}
+
+.contacts, .lead_stream{
+	position: relative;
+}
+
+
+//colors: 
+.is-danger{
+	color: red;
+}
+
+.exit-green{
+  color: $exit-green;
+}
+
+
+
+

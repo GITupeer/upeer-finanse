@@ -1,0 +1,19 @@
+.lead_stream{
+    .more_button {
+        color: $exit-green-light; 
+        font-size: 11px;
+        padding: 7px 20px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        border: 0.05rem solid rgb(90, 178, 187);
+        border-radius: 10px;
+        font-weight: bold;
+        background-color: white;
+        transition: all .1s;
+        &:active{
+            // transform:translateY(2px);
+        }
+    }
+
+
+}

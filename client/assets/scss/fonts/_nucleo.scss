@@ -1,0 +1,155 @@
+/* --------------------------------
+
+exit-app Web Font
+Generated using nucleoapp.com
+
+-------------------------------- */
+@import "variables";
+@import "mixins";
+
+@font-face {
+  font-family: 'exit-app';
+  src: url('#{$icon-font-path}/exit-app.eot');
+  src: url('#{$icon-font-path}/exit-app.eot') format('embedded-opentype'),
+    url('#{$icon-font-path}/exit-app.woff2') format('woff2'),
+    url('#{$icon-font-path}/exit-app.woff') format('woff'),
+    url('#{$icon-font-path}/exit-app.ttf') format('truetype'),
+    url('#{$icon-font-path}/exit-app.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*------------------------
+	base class definition
+-------------------------*/
+
+.app-icon {
+  display: inline-block;
+  font: normal normal normal 1em/1 'exit-app';
+  speak: none;
+  text-transform: none;
+  /* Better Font Rendering */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/*------------------------
+  change icon size
+-------------------------*/
+
+/* relative units */
+.app-icon-sm {
+  font-size: 0.8em;
+}
+.app-icon-lg {
+  font-size: 1.2em;
+}
+/* absolute units */
+.app-icon-16 {
+  font-size: 16px;
+}
+.app-icon-32 {
+  font-size: 32px;
+}
+
+/*----------------------------------
+  add a square/circle background
+-----------------------------------*/
+
+.app-icon-bg-square,
+.app-icon-bg-circle {
+  padding: 0.35em;
+  background-color: $icon-background-color;
+}
+
+.app-icon-bg-circle {
+  border-radius: 50%;
+}
+
+/*------------------------------------
+  use icons as list item markers
+-------------------------------------*/
+
+.app-icon-ul {
+  padding-left: 0;
+  list-style-type: none;
+
+  > li {
+    display: flex;
+    align-items: flex-start;
+    line-height: 1.4;
+  }
+
+  > li > .app-icon {
+    margin-right: $icon-li-margin-right;
+    line-height: inherit;
+  }
+}
+
+/*------------------------
+  spinning icons
+-------------------------*/
+
+.app-icon-is-spinning {
+  -webkit-animation: app-icon-spin 2s infinite linear;
+  -moz-animation: app-icon-spin 2s infinite linear;
+  animation: app-icon-spin 2s infinite linear;
+}
+
+@-webkit-keyframes app-icon-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@-moz-keyframes app-icon-spin {
+  0% {
+    -moz-transform: rotate(0deg);
+  }
+  100% {
+    -moz-transform: rotate(360deg);
+  }
+}
+@keyframes app-icon-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+/*------------------------
+  rotated/flipped icons
+-------------------------*/
+
+.app-icon-rotate-90  {
+	@include icon-rotate(90deg, 1);
+}
+
+.app-icon-rotate-180 {
+	@include icon-rotate(180deg, 2);
+}
+
+.app-icon-rotate-270 {
+	@include icon-rotate(270deg, 3);
+}
+
+.app-icon-flip-y {
+	@include icon-flip(-1, 1, 0);
+}
+.app-icon-flip-x {
+	@include icon-flip(1, -1, 2);
+}
+
+@import "icons";

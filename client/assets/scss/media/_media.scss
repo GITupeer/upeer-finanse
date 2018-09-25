@@ -1,0 +1,31 @@
+
+//because all default styles are written mobile-first, and tablets are not supported (for now at least), not much media will be needed here - main thing is to deal with IphoneX damn notch 
+
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-device-pixel-ratio: 3){
+	.app-footer {
+		padding-bottom: 20px;
+		background-color: $exit-green;
+	}
+	.dashboard, .base-layout{
+		min-height: calc(100vh - 108px); 
+	}
+	.app-container{
+		padding-bottom: 57px;
+	}
+}
+
+@media (max-width: 360px) {
+	.marketplace .section-body .filters .filters-wrapper.btns .checkbox-btn label{
+		// padding: 10px 4px; 
+		font-size: 13px;
+	}
+}
+
+
+
+@media screen and (min-width: 600px){
+    p, span{
+      	// font-size: 20px; ??
+    }
+}

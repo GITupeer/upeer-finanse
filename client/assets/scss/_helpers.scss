@@ -1,0 +1,56 @@
+.mb-5{
+	margin-bottom: 5px; 
+}
+
+.mb-10{
+	margin-bottom: 10px;
+}
+
+.mr-10{
+	margin-right: 10px;
+}
+.ml-10{
+	margin-left: 10px;
+}
+
+.inline-block{
+	display: inline-block;
+}
+
+.smallSpinner {
+	position: absolute;
+	top: 45vh;
+	left: calc(50% - 8px);
+	color: $exit-green;
+}
+
+.text-center{
+	text-align: center;
+}
+.text-left{
+	text-align: left;
+}
+
+.mt-10{
+	margin-top: 10px;
+}
+
+.center{
+	text-align: center; 
+}
+
+.keyboardOn{
+	padding-bottom: 10px;
+}
+
+
+
+//small stuff - move it later
+.potential_buyer{
+	.results{
+		font-size: 14px;
+		text-align: left;
+		margin-bottom: 10px;
+	}
+}
+

@@ -1,0 +1,36 @@
+.support {
+
+	.section-body {
+		
+		span, p {
+			font-size: 14px;
+			line-height: 140%;
+		}
+		
+		& > *:not(:last-child){
+			margin-bottom: 18px;
+		}
+	}
+
+	.info{
+		padding: 0 20px;
+
+	}
+
+	.call-us, .live-chat{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 0 20px;
+		span{
+			flex: 0 0 60%;
+			padding-right: 10px;
+		}
+		a{
+			text-align: center; 
+		}
+		.number{
+			display: inline-block;
+		}
+	}
+}

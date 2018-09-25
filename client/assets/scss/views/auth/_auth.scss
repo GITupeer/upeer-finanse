@@ -1,0 +1,252 @@
+.app-container-front{
+	background-image: url('http://mymobileadmin.com/exitapp/images/log_screen.jpg');
+	background-size: contain;
+	height: 100vh;
+	display: flex; 
+	flex-flow: column;
+	//justify-content: center;
+	//align-items: center;
+	//display: flex;
+	//padding-bottom: 0; 
+
+	.exit_logo{
+		height: 70px;
+		margin: 0 auto;
+		// margin-bottom: 5%;
+	}
+
+
+	.box {
+		width: 95%;
+		text-align: center;
+		text-align: center; 
+		flex: 1; 
+		display: flex;
+	}
+
+	.change-margin {
+		margin-bottom: -20px;
+	}
+
+	.border-right {
+		border-left: 1px solid rgb(127, 200, 210); 
+		height: 25px;
+		margin-top: 54px;
+	}
+
+	.error-class {
+		margin-top: 5px;
+		margin-bottom: -2px;
+		font-size: 11px;
+		color: white;
+		font-family: 'Roboto', sans-serif;
+		font-weight: 300;
+	}
+
+
+
+	.menu-box {
+		color: rgb(255, 255, 255);
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		margin-top: 2vh;
+		width: 100%;
+	}
+
+
+	.icon-box {
+		height: 22px;
+		width: 30px;
+	}
+
+	.circle-box {
+		padding: 0 8px;
+		display: flex; 
+		flex-direction: column; 
+		justify-content: center; 
+		align-items: center;
+		color: rgb(255, 255, 255);
+	}
+
+	.circle-text {
+		font-size: 11px;
+	}
+
+	.circle {
+		background-color: rgb(78, 161, 181);
+		width: 45px; 
+		height: 45px;
+		margin-bottom: 12px;
+		border-radius: 50%;
+		display: flex;
+		align-items: center; 
+		justify-content: center;
+
+	}
+
+
+	.link-box {
+		display: flex;
+		color: white;
+		width: 84%;
+		font-size: 10px;
+		padding: 15px 0px;
+		font-weight: 300;
+		justify-content: space-between; 
+		align-items: center;
+		margin-top: -5px;
+		font-family: 'Roboto', sans-serif; 
+		font-weight: 300;
+	}
+
+	.login-button {
+		padding: 6px 35px;
+		font-size: 12px;
+		border-radius: 15px;
+		border: 0px solid rgb(208, 232, 236);
+		box-shadow: 0px 0px 1px 1px rgb(208, 232, 236);
+		color: rgb(255, 255, 255);
+		background-color: rgb(0, 118, 134);
+		margin-top: 10px;
+		font-family: 'Roboto', sans-serif; font-weight: 300;
+	}
+
+	.icon-input {
+		position: absolute; 
+		color: rgb(42, 149, 171); 
+		font-size: 19px; 
+		margin-top: 6px; 
+		margin-left: 10px; 
+		padding-right: 10px; 
+		border-right: 1px solid rgb(136, 204, 214); 
+		height: 28px;
+	}
+
+	.input-login-div{
+		width: 81%;
+		margin-bottom: 15px;
+	}
+
+	.input-login{
+		width: 100%;
+		padding: 11px 20px;
+		background-color: rgb(178, 227, 231);
+		color: rgb(85, 89, 89);
+		font-weight: bold;
+		//box-shadow: 0px 4px 2px -2px #54cdd4;
+		border: 0px;
+		border-bottom: 1px solid #54cdd4;
+		padding-left: 50px;
+		font-size: 11px;
+		border-radius: 3px;
+		font-family: 'Roboto', sans-serif; font-weight: 500;
+	}	
+	
+
+	.login_wrapper{
+		display: flex;
+		justify-content: space-evenly;
+		flex-direction: column;
+		flex: 1; 
+		width: 100%;
+		// position: fixed;
+		// top: 5%
+	}
+
+	.login{
+		margin: 0 auto;
+		width: 80%;
+		text-align: center;
+		padding: 11px 11px 0 11px;
+		background: rgba(0,0,0,.5);
+		box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+		font-size: 13px;
+		// margin-top: 40px;
+
+		form,input,button{
+			width: 100%;
+		}
+
+		input,button{
+			padding: 7px;
+			margin-bottom: 5px;
+			border: 0;
+		}
+
+		button{
+			margin-top: 15px;
+			background: $exit_green;
+			color: #fff;
+		}
+
+		input{
+			border: 1px solid rgba(0,0,0,0);
+		}
+
+		input[aria-invalid="true"]{
+			border: 1px solid red;
+		}
+
+		.incorrect_password {
+			margin-top: 10px;
+			color: red;
+			font-size: 14px
+		}
+
+		.recover_pass {
+			color: #fff;
+			text-align: left;
+			font-size: 12px;
+			margin-top: 5px;
+			a {
+				color: inherit;
+			}
+		}
+
+		#loginForm{
+			display: none;
+			padding-bottom: 15px;
+		}
+		#slideLogin{
+			color: white;
+			padding-bottom: 15px;
+		}
+
+		.password-input{
+			position: relative;
+			input{
+				padding-right: 40px;
+			}
+		}
+		.preview-icon{
+			position: absolute;
+			color: #252525;
+			top: 0px; 
+			right: 0px; 
+			padding: 6px;
+		}
+
+	}
+
+	.icons{
+		margin: 0 auto;
+		width: 80%;
+		height: 40px;
+		background: rgba(0, 0, 0, 0.5);
+		margin-top: 15px;
+		box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+		color: white;
+		display: flex;
+		align-items: center;
+		font-size: 13px;
+		svg{
+			width: 50px;
+			height: 25px;
+		}
+	}
+	.help.is-danger{
+		// color: red;
+		font-size: 14px;
+	}
+}

@@ -1,0 +1,50 @@
+.todo{
+    &.base-layout{
+        position: relative;
+    }
+    
+
+    .todo-item{
+        box-shadow: 0px 0px 1px 1px rgba(179, 179, 179, 0.5); 
+        background-color: rgb(255, 255, 255); 
+        margin-bottom: 15px; 
+        border-radius: 3px;
+        display: flex;
+        align-items: center;
+
+        &__left{
+            flex: 0 0 15%; 
+        }
+
+        &__text{
+            flex: 1;
+            font-size: 14px;
+            .completed {
+                text-decoration: line-through;
+            }
+        }
+
+        &__right{
+            margin-right: 10px;
+            .checkbox{
+                display: flex;
+            }
+        }
+
+        .todo-circle{
+            border-radius: 50%; 
+            color: white; 
+            width: 30px;
+            height: 30px; 
+            margin: 4px; 
+            display: flex; 
+            align-items: center; 
+            justify-content: center;
+            &.grey{
+                background-color: grey;
+            }
+        }
+
+        
+    }
+}

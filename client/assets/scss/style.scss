@@ -1,0 +1,146 @@
+// Global styles
+@import 'reset';
+
+*:focus,
+*:active,
+*:focus{
+  	outline: none;
+}
+
+html, body{
+	// padding: 
+	// env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left)
+	// constant(safe-area-inset-top) constant(safe-area-inset-right) constant(safe-area-inset-bottom) constant(safe-area-inset-left)
+	// 	touch-action: pan-y pinch-zoom;
+	// 	user-select: none;
+}
+
+$exit-green: #008c9a;
+$exit-green-light: lighten($exit-green, 5%);
+$dashboard_grey: #f1f1f1;
+$font_black: black;
+$font_grey: #8a8a8a;
+
+
+img {
+  	max-width: 100%;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	color: $font_grey;
+}
+
+.no-items{
+	position: absolute; 
+	top: 50%; 
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 100%; 
+	text-align: center;
+	font-size: 14px;
+	padding: 0 15px;
+}
+
+.no-items-contener {
+	display: flex; 
+	align-items: center; 
+	justify-content: center; 
+	flex-direction: column-reverse;
+}
+
+.no-items-box {
+	margin-right: 5px; 
+	display: flex; 
+	align-items: center;
+}
+
+.no-items-text {
+	margin-left: 5px;
+}
+
+
+.header_body_info {
+	display: flex; 
+	width: 100%; 
+	align-items: center;
+}
+
+
+a {
+	color: $font_grey;
+	transition: all .2s;
+	text-decoration: none;
+
+	&:active {
+		color: $exit_green;
+	}
+
+	&.router-link-active{
+		color: $exit_green;
+	} 
+}
+
+p {
+	line-height: 115%;
+}
+
+#app, .app-container {
+	min-height: 100vh;
+	// background-color: red;
+}
+
+.app-container {
+    padding-bottom: 45px;
+    display: block;
+    flex-direction: column;
+	justify-content: space-between;
+	background: rgb(242, 242, 242);
+}
+
+// Views styles
+@import 'common_styles';
+@import 'helpers';
+
+@import 'views/auth/auth';
+
+@import 'views/dashboard';
+@import 'views/quick_lead';
+@import 'views/notifications';
+@import 'views/properties';
+@import 'views/promote';
+@import 'views/mbc';
+@import 'views/contacts';
+@import 'views/support';
+@import 'views/marketplace';
+@import 'views/my_profile';
+@import 'views/convention';
+@import 'views/news';
+@import 'views/training';
+@import 'views/lead_stream';
+@import 'views/documents';
+@import 'views/OfficeDirectory';
+@import 'views/todo';
+@import 'views/eManuals';
+
+// Single components styles
+@import 'components/loader';
+@import 'components/footer';
+@import 'components/transitions';
+@import 'components/tutorial';
+@import 'components/forms';
+@import 'components/modal';
+@import 'components/search';
+@import 'components/zebra';
+@import 'components/nav';
+@import 'components/buttons';
+@import 'components/checkboxes';
+@import 'components/icons';
+
+//icon fonts -> not used right now (we're using svg) but consider changing it later, mobile optimalization maybe?
+@import 'fonts/nucleo'; 
+
+//media
+@import 'media/media';
+
+

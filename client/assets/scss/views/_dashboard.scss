@@ -1,0 +1,222 @@
+.app-header {
+	position: relative;
+	width: 100%;
+	height: 50px;
+	background-color: $exit-green;
+	display: flex;
+	&.marketplaceDetails{
+		height: 50px;
+		color: #fff;
+		text-align: left;
+		.app-header__wrapper{
+			justify-content: flex-start;
+			padding-left: 20px;
+			h1{
+				padding-left: 10px;
+			}
+		}
+	}
+
+	&__wrapper {
+		// padding: 11px 20px 0 20px;
+		flex:1;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+
+		.top-nav-item{
+			flex: 0 0 25%;
+			div{
+				display: inline-block;
+			}
+			&.right{
+				display: flex;
+				justify-content: space-between;
+			}
+		}
+	}
+
+	// &__icon {
+	// 	height: 23px;
+	// 	width: auto;
+	// 	color: #fff;
+	// }
+
+	&__logo {
+		max-height: 30px;
+	}
+}
+
+/////////////////////////////////////////
+
+.dashboard{
+	min-height: calc(100vh - 105px); 
+	display: flex; 
+	flex-direction: column;
+
+	.dashboard-header{
+		background-color: rgb(0, 140, 154); 
+		width: 100%; 
+		color:white; 
+		text-align: center; 
+		padding: 10px 0; 
+		position: relative;
+		top: -1px; //fixes weird line
+		overflow: hidden;
+
+		.dashboard-picture{
+			border-radius: 50%; 
+			background-position: center; 
+			width: 28%; 
+			padding-bottom: 28%; //nice hack;
+			margin: 0 auto;
+			background-size: cover;
+		}
+		.name{
+			color: #fff;
+			padding: 10px 0;
+		}
+
+		.box{
+			border-radius: 50%;
+			border: 1px solid rgba(179, 179, 179, 0.5);
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+
+		.box-1{
+			width: 200px;
+			height: 200px;
+			// clip-path: inset(0px 0 5px 0);
+		}
+
+		.box-2{
+			width: 280px;
+			height: 280px;
+			// clip-path: inset(0px 0 40px 0);
+		}
+		.box-3{
+			width: 360px;
+			height: 360px;
+			// clip-path: inset(0px 0px 78px 0);
+		}
+	}
+	.dashboard-body{
+		flex: 1;
+		padding: 10px;
+		display: flex; 
+		flex-wrap: wrap;
+		justify-content: space-between;
+
+		.dashboard-item{
+			position: relative; 
+			flex: 0 0 30%;
+			display: flex; 
+			flex-direction: column;
+			align-items: center;
+			justify-content: space-evenly;
+			min-height: 87px;
+			margin: 5px;
+			background-color: #fff;
+			box-shadow: 0px 0px 1px 1px rgba(179, 179, 179, 0.5);
+
+			img{
+				width: 50%;
+			}
+			p{
+				font-size: 12px;
+				text-align: center;
+			}
+		}
+		.notification-count{
+			width: 20px;
+			height: 20px;
+			position: absolute; 
+			top: 5px;
+			right: 5px;
+			border-radius: 50%; 
+			background-color: #F44336;
+			color: #fff;
+			display: flex; 
+			align-items: center;
+			justify-content: center;
+			font-weight: 600;
+			font-size: 12px;
+		}
+
+
+	}
+}
+
+/////////////////////////////////////////////
+
+// .dashboard_container {
+// 	width: 100%;
+// 	min-height: calc(100vh - 137px);
+// 	flex: 1;
+// 	display: flex;
+// 	flex-direction: column;
+// 	//height: 100vh;
+// 	//display: flex;
+
+// 	.dashboard_grid {
+// 		display: flex;
+// 		flex-direction: column;
+// 		padding-top: 30px;
+// 		width: 100%;
+// 		flex: 1;
+// 		// height: 50%;
+// 		background-color: #fff;
+
+// 		.dashboard_grid_row {
+// 			display: flex;
+// 			padding-bottom: 15px;
+// 			flex: 1;
+
+// 			&:last-of-type {
+// 				padding-bottom: 0;
+// 			}
+// 		}
+
+// 		.dashboard_grid_box {
+// 			//position: relative;
+// 			display: flex;
+// 			flex-direction: column;
+// 			justify-content: flex-start;
+// 			align-items: center;
+// 			flex: 1;
+// 			text-align: center;
+
+// 			a {
+// 				display: block;
+// 				position: relative;
+
+// 				img {
+// 					height: 50px;
+// 					margin-bottom: 8px;
+// 					opacity: 1;
+// 					transition: all .1s;
+
+// 					&.active_dashboard_icon {
+// 						position: absolute;
+// 						opacity: 0;
+// 						left: 50%;
+// 						top: 0;
+// 						transform: translateX(-50%);
+// 					}
+
+// 				}
+// 				&:active {
+// 					img {
+// 						opacity: 0;
+// 						&.active_dashboard_icon {
+// 							opacity: 1;
+// 						}
+// 					}
+// 				}
+// 			}
+// 		}
+// 	}
+// }

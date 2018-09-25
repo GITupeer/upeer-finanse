@@ -1,0 +1,58 @@
+svg.icon{
+	max-width: 100%;
+	width: 20px; 
+	height: 20px;
+	&--md{
+		color: $exit-green;
+		width: 32px; 
+		height: 32px; 
+	}
+	&--xs{
+		width: 12px;
+		height: 12px;
+	}
+	&__quickLead{
+		color: $exit-green;
+		width: 48px;
+		height: 48px;
+	}
+
+	&--nav{
+		color: rgb(115, 115, 115);	
+	}
+
+
+	&.color-white{
+		color: #fff;
+	}
+	&.color-exit{
+		color: $exit-green;
+	}
+	&.color-exitLight{
+		color: $exit-green-light;
+	}
+	&.free-offer{
+		color: $exit-green;
+		position: absolute; 
+		top: 0;
+		right: 0;
+	}
+	
+}
+
+//animation - just add this class to svg to rotate icon endlessly
+.spinning{
+	color: $exit-green;	
+	animation-name: spin;
+	animation-duration: 1000ms;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+@keyframes spin {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}

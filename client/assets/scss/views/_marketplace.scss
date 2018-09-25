@@ -1,0 +1,149 @@
+.marketplace{
+	.section-body{
+
+		.section-intro {
+			font-size: 14px;
+			line-height: 140%;
+			margin-bottom: 15px;
+		}
+
+		section{
+			font-size: 14px;
+		}
+		h2{
+			text-align: center;
+		}
+
+		.featured-slider{
+			margin-bottom: 15px;
+			.slider-title{
+				background-color: $exit-green;
+				color: #fff;
+				padding: 10px
+			}
+			.slider{
+				.slider-img{
+					display: none;
+					width: 100%;
+				}
+				.anim {animation:opac 0.8s}
+				@keyframes opac{
+					from{opacity:0} 
+					to{opacity:1}
+				}
+			}
+			.slider-nav{
+				a{
+					color: $exit-green;
+				}
+				padding: 10px 0;
+				display: flex;
+				justify-content: space-between;
+			}
+		}
+
+		.filters{
+			.filters-title{
+				color: $exit-green;
+				padding: 10px 0;
+				text-align: left;
+			}
+			.filters-wrapper{
+				display: flex;
+				justify-content: space-around;	
+				&.btns{
+					margin-bottom: 10px;
+					.checkbox-btn{
+						flex: 1;
+						display: flex;
+						text-align: center;
+						border: 1px solid #e2e2e2;
+						margin: 1px;
+						input{
+							display: none;
+							&:checked + label {
+								background-color: $exit-green-light;
+								color: #fff;
+							}
+						}
+						label{
+							color: #8a8a8a;
+							flex:1;
+							padding: 10px 4px;
+							transition: all .2s;
+						}
+					}
+				}
+				&.chbx{
+					padding: 10px 0; 
+				}
+			}
+			.checkbox {
+				.checkbox-label:before{
+					border: 2px solid #c5c5c5;
+					background-color: transparent;
+				}
+				.checkbox-input{
+					&:checked {
+						+ .checkbox-label:before{
+							background: $exit-green-light; 
+							border:none;
+						}
+						+ .checkbox-label{
+							color: $exit-green;
+						}
+					}
+				}
+			}
+		}
+
+		.offers{
+			.offers-grid {
+				display: flex;
+				flex-wrap: wrap; 
+				justify-content: space-between; 
+		
+				.offer {
+					&__box {
+						position: relative;
+						flex: 0 0 32%;
+						text-align: center;
+		
+						background-color:#fff;
+						box-shadow: 0px 0px 1px 1px rgba(179,179,179, .5);
+						margin-top: 10px;
+						&:before {
+							content: ""; 
+							float: left; 
+							padding-top: 100%; 
+						}
+
+						img, .no-logo{
+							position: absolute;
+							top: 50%;
+							left: 50%;
+							font-weight: 700;
+							transform: translate(-50%, -50%);
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.marketplaceDetails{
+	.img-wrapper{
+		padding-bottom: 10px;
+	}
+	.text-wrapper{
+		padding: 0 20px; 
+		font-size: 14px; 
+		list-style-type: circle; 
+		ul{
+			list-style-type: circle; 
+		}
+	}
+}
+
+
